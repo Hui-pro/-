@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+				.box{
+				position: relative;
+				font-size: 0.16rem;
+			}			
+			.ula{
+				width: 100%;
+				height: 0.45rem;
+				display: flex;
+				position: fixed;
+				margin-top: 0.12rem;
+				align-items: center;
+				/*padding: 0 0 0 0.18rem;*/
+				justify-content: space-around;
+			}
+			.ula>li{
+				width: 100%;
+				height: 0.25rem;
+				display: flex;
+				justify-content: space-around;
+			}
+			p{
+				display: flex;
+			}
+			.ula>li>p:nth-child(1)>img{
+				width: 0.4rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(3)>img{
+				width: 0.38rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>input{
+				width: 2.5rem;
+				height: 0.30rem;
+				font-size: 0.12rem;
+				padding: 0 0 0 0.28rem;
+				position: relative;
+				border-radius:0.3rem ;
+				background: #f5f5f5;
+				border: 0;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>span>img{
+				width: 0.18rem;
+				height: 0.17rem;
+				font-size: 0.12rem;
+				position: absolute;
+				top: 0.18rem;
+				left: 0.58rem;
+				z-index: 1;
+			}
+			.box>.top{
+				width: 100%;
+				height: 2.86rem;
+				background:url(img/矩形-67-拷贝-2.jpg) no-repeat;
+				background-size:100% 100%;
+				position: fixed;
+				top: 0;
+			}
+			.top>.ul1{
+				width: 60%;
+				margin-left: 0.23rem;
+				margin-top:0.7rem ;
+				display: flex;
+				position: fixed;
+			}
+			.top>.ul1>li{
+				display: flex;
+			}
+			.top>.ul1>li:nth-child(1)>img{
+				height: 0.4rem;
+				margin-top: 0.18rem;
+			}
+			.top>.ul1>li:nth-child(1)>.le{
+				padding: 0.15rem 0 0 0.1rem;
+				width: 1.9rem;
+				display: flex;
+				flex-wrap:wrap ;
+				color: white;
+				line-height: 0.23rem;
+			}
+			.top>.ul1>li:nth-child(1)>.le>p:nth-child(1){
+				height: 0.2rem;
+				font-size: 0.19rem;
+			}
+			.top>.ul1>li:nth-child(1)>.le>p:nth-child(2){
+				font-size: 0.1rem;
+				
+			}
+			.top>.ul1>li:nth-child(1)>.le>p:nth-child(2)>span:nth-child(1)>img{
+				height: 0.13rem;
+				width: 0.51rem;
+			}
+			.top>.ulq{
+				position: fixed;
+				position: absolute;
+				top: 0.49rem;
+				left: 3rem;
+			}
+			.top>.ulq>li{
+				width: 0.64rem;
+				height: 0.31rem;
+				text-align: center;
+				border-radius:0.06rem ;
+				background: rgb(45 215 165);
+				margin-top: 0.4rem;
+				padding:0.08rem 0 0 0;
+				position: fixed;
+			}
+			.top>.ulw{
+				width: 90%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				margin-top:1.6rem ;
+				/*height: 0.31rem;*/
+			}
+			.top>.ulw>li{
+				color: white;
+				/*border-bottom:0.1rem solid white ;*/
+			}
+			.top>.ulw>li>a{
+				color: white;
+				/*border-bottom:0.1rem solid white ;*/
+			}
+			.top>.ulw>li:hover{
+				border-bottom:0.01rem solid white ;
+			}
+			 html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      /*background: #eee;*/
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+    width: 1.17rem;
+    height: 0.54rem;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+	  z-index: 99;
+      background: url(img/优惠券1.png)no-repeat;
+       background-size: 100% 100%;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    /*.imgz{
+    	height:0.58rem;
+    }*/
+    .you{
+    	margin-top: 2rem;
+    	position: relative;
+    }
+    .p1>li{
+    	width: 1rem;
+    	height: 0.3rem;
+    	position: absolute;
+    }
+    .p1>li:nth-child(1){
+    	left: 0;
+    	top:0.1rem;
+    	color: white;
+    	font-size: 0.13rem;
+    }
+    .p1>li:nth-child(2){
+    	left: 0;
+    	top:0.3rem;
+    	color: white;
+    	font-size: 0.13rem;
+    }
+    .p2>li{
+    	width: 0.55rem;
+    	margin: 0 auto;
+    	position: absolute;
+    	left: 0.93rem;
+    	top: 0.35rem;
+    	color: white;
+    	border-radius:0.15rem ;
+    	background:  #FF5B2C;
+    	font-size: 0.06rem;
+    }
+   .lun2{
+   	width:  90%;
+   	margin:  0 auto;	
+   	z-index: 99;
+   }
+   .lun2>img{
+   	width: 100%;
+   	margin-top:0.5rem ;
+   
+   }
+    .lun2>ul{
+    	width: 100%;
+    	position: absolute;
+    	top: 1.1rem;
+    	left: 1.0rem;
+    }
+      .lun2>ul>li>p:nth-child(1){
+      		color: #FF5B2C;
+      		font-size: 0.15rem;
+      }
+      .lun2>ul>li>p:nth-child(2){
+      		/*width: 4rem;
+      	height: 0.2rem;*/
+      	font-size: 0.3rem;
+      	color: #FF5B2C;
+      	margin-left: 0.12rem;
+      }
+      .lun2>ul>li>p:nth-child(3){
+      		width: 0.8rem;
+      		color: white;
+      		background: #FF5B2C;
+      		border-radius:0.15rem ;
+      		margin-left: 0.4rem;
+      }
+      .fooq>ul:nth-child(1){
+      	width: 100%;
+      	display: flex;
+      	justify-content: space-around;
+      }
+        .fooq>ul:nth-child(1)>li:hover{
+        	color: rgb(3 209 147);
+        }
+        .fooq>ul:nth-child(2){
+        	width: 90%;
+        	margin: 0 auto;
+        	display: flex;
+        	justify-content: center;
+        }
+         .fooq>ul:nth-child(2)>li{
+         	border:0.01rem solid #EEEEEE;
+         }
+         .fooq>ul:nth-child(2)>li>p:nth-child(1)>img{
+         	width:70%;
+         	height: 80%;
+         	padding: 0.6rem 0 0.6rem 0;
+         	margin: 0 auto;
+         }
+         .fooq>ul:nth-child(2)>li>p:nth-child(2){
+         	font-weight:bold ;
+         }
+         .fooq>ul:nth-child(2)>li>p:nth-child(3){
+         	width: 0.58rem;
+         	text-align: center;
+         	font-size: 0.1rem;
+         	border-radius:0.15rem ;
+         	color: rgb(249 108 36);
+         	border: 0.01rem solid #FBB18C;
+         }
+           .fooq>ul:nth-child(2)>li>p:nth-child(4)>span:nth-child(1){
+           		color: rgb(3 209 147);
+           	}
+           .fooq>ul:nth-child(2)>li>p:nth-child(4)>span:nth-child(2){
+           	width: 0.26rem;
+           	height: 0.11rem;
+           	margin-top:0.1rem ;
+           		color: white;
+           		background: #FBB18C;
+           		font-size: 0.1rem;
+           	}
+           .fooq>ul:nth-child(2)>li>p:nth-child(4)>span:nth-child(3)>img{
+           	width: 0.28rem;
+           	height: 0.26rem;
+           	margin-left: 0.4rem;
+           	}
+           	 .fooq>ul:nth-child(3){
+           	 	width: 100%;
+           	 	height: 0.43rem;
+           	 	position: fixed;
+           	 	bottom: 0;
+           	 	display: flex;
+           	 	justify-content: space-around;
+           	 	border: 0.01rem solid #EEEEEE;
+           	 	background: white;
+           	 }
+           	   .fooq>ul:nth-child(3)>li{
+           	   margin-top: 0.07rem;
+           	   }
+           	  .fooq>ul:nth-child(3)>li:nth-child(1){
+           	  	display: flex;
+           	  }
+           	  .fooq>ul:nth-child(3)>li:nth-child(1)>p:nth-child(1)>img{
+           	  		width: 0.2rem;
+           	  		height: 0.18rem;
+           	  		padding: 0.02rem 0.06rem 0 0;
+           	}
+           	  .fooq>ul:nth-child(3)>li:nth-child(3)>p:nth-child(1)>img{
+           	  		width: 0.2rem;
+           	  		height: 0.18rem;
+           	  		margin-left: 0.23rem;
+           	}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<ul class="ula">
+					<li>
+						<p><img src="img/店铺首页1111.jpg"/></p>
+						<p><span><img src="img/sousuo的副本.png"/></span><input type="text" name="" id="" value=""placeholder="搜索商品" /></p>
+						<p><img src="img/首页11.jpg"/></p>
+					</li>
+				</ul>
+				<ul class="ul1">
+					<li>
+						<img src="img/店铺首页2222.jpg"/>
+						<div class="le">
+							<p>千图网生鲜水果店</p>
+							<p>
+								<span><img src="img/店铺首页3333.jpg"/></span>
+								2.6万人关注
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="ulq">
+					<li>+关注</li>
+				</ul>
+				<ul class="ulw">
+					<li><a href="index.html">首页</a></li>
+					<li>促销</li>
+					<li>上新</li>
+					<li><a href="店铺动态.html">动态</a></li>
+				</ul>
+			</div>
+			<div class="you">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      		<ul class="p1">
+				      			<li>￥10</li>
+				      			<li>满200元可用</li>
+				      		</ul>
+				      		<ul class="p2">
+				      			<li>点击领取</li>
+				      		</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      		<ul class="p1">
+				      			<li>￥10</li>
+				      			<li>满200元可用</li>
+				      		</ul>
+				      		<ul class="p2">
+				      			<li>点击领取</li>
+				      		</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="p1">
+				      			<li>￥10</li>
+				      			<li>满200元可用</li>
+				      		</ul>
+				      		<ul class="p2">
+				      			<li>点击领取</li>
+				      		</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      		<ul class="p1">
+				      			<li>￥10</li>
+				      			<li>满200元可用</li>
+				      		</ul>
+				      		<ul class="p2">
+				      			<li>点击领取</li>
+				      		</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      		<ul class="p1">
+				      			<li>￥10</li>
+				      			<li>满200元可用</li>
+				      		</ul>
+				      		<ul class="p2">
+				      			<li>点击领取</li>
+				      		</ul>
+				      </div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				  </div>
+			</div>
+			<div class="lun2">
+				<img src="img/矩形-62-拷贝.png"/>
+				<ul>
+					<li>
+						<p>#买过都说好&nbsp;&nbsp;&nbsp;人人都爱吃#</p>
+						<p>攀枝花枇杷</p>
+						<p>了解更多</p>
+					</li>
+				</ul>
+			</div>
+			<div class="fooq">
+				<ul>
+					<li>推荐</li>
+					<li>销量</li>
+					<li>新品</li>
+					<li>价格</li> 
+				</ul>
+				<ul>
+					<li>
+						<p><img src="img/橙子-拷贝.png"/></p>
+						<p>国产红心火龙果600g起</p>
+						<p>满99减20</p>
+						<p><span>￥39.00</span><span>抢购</span><span><img src="img/gouwucheman.png"/></span></p>
+					</li>
+					<li>
+						<p><img src="img/橙子-拷贝.png"/></p>
+						<p>国产红心火龙果600g起</p>
+						<p>满99减20</p>
+						<p><span>￥39.00</span><span>抢购</span><span><img src="img/gouwucheman.png"/></span></p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p><img src="img/类目-品类-分类-类别.png"/></p>
+						<p><a href="展示页.html">商品分类</a></p>
+					</li>
+					<li><a href="店铺信息.html">店铺详情</a></li>
+					<li>
+						<p><img src="img/联系电话.png"/></p>
+						<p style="color: rgb(3 209 147);">联系电话</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		 var swiper = new Swiper('.swiper-container', {
+		      slidesPerView: 2.4,
+		      spaceBetween: 10,
+		      centeredSlides: true,
+		      loop:true,
+		    });
+	</script>
+</html>

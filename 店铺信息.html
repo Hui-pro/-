@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			.box{
+				height: 100%;
+				/*background: #EEEEEE;*/
+				font-size: 0.16rem;
+			}
+			.ula{
+				width: 100%;
+				height: 0.45rem;
+				display: flex;
+				justify-content: space-around;
+				background: #EEEEEE;
+			}
+			.ula>li{
+				width:100%;
+				height: 0.25rem;
+				position: fixed;
+				display: flex;
+				justify-content: flex-start;
+			}
+			p{
+				display: flex;
+			}
+			.ula>li>p:nth-child(1)>img{
+				width: 0.4rem;
+				height: 0.35rem;
+				padding: 0.08rem 0 0 0.08rem;
+				/*border: 0.01rem solid black;*/
+			}
+			.ula>li>p:nth-child(2){
+				width: 1rem;
+				height: 0.4rem;
+				font-size: 0.2rem;
+				/*border: 0.01rem solid black;*/
+				/*padding-left: 0.6rem;*/
+				margin: 0 auto;
+				padding: 0.08rem 0 0 0.06rem;
+			}
+			.box>.ul1{
+				width: 60%;
+				margin-left: 0.23rem;
+				margin-top:0.29rem ;
+				display: flex;
+				position: fixed;
+			}
+			.box>.ul1>li{
+				display: flex;
+			}
+			.box>.ul1>li>img{
+				/*width: 100%;*/
+				height: 0.8rem;
+				margin-top: 0.06rem;
+			}
+			.box>.ul1>li>.le{
+				padding: 0.15rem 0 0 0.1rem;
+				width: 1.9rem;
+				display: flex;
+				flex-wrap:wrap ;
+				/*color: white;*/
+				line-height: 0.1rem;
+			}
+			.box>.ul1>li>.le>p:nth-child(1){
+				height: 0.2rem;
+				font-size: 0.19rem;
+			}
+			.box>.ul1>li>.le>p:nth-child(2){
+				font-size: 0.15rem;
+				color: silver;
+			}
+			.box>.ul1>li>.le>p:nth-child(2)>span:nth-child(1)>img{
+				height: 0.13rem;
+				width: 0.51rem;
+			}
+			.box>.ulq{
+				position: fixed;
+				position: absolute;
+				top: 0.49rem;
+				left: 3rem;
+			}
+			.box>.ulq>li{
+				width: 0.64rem;
+				height: 0.31rem;
+				text-align: center;
+				border-radius:0.06rem ;
+				background: rgb(45 215 165);
+				margin-top: 0.4rem;
+				padding:0.08rem 0 0 0;
+				position: fixed;
+			}
+			.box>.ulr{
+				margin-top: 1.2rem;
+				width: 100%;
+				height: 0.4rem;
+				display: flex;
+				justify-content: space-around;
+				border-bottom:0.01rem solid #EEEEEE ;
+			}
+			.box>.ulr>li>p:nth-child(1){
+				width: 25%;
+				margin: 0 auto;
+			}
+			.ppp{
+				width: 90%;
+				margin: 0 auto;
+				margin-top:0.1rem ;
+			}
+			.ppp>p>span:nth-child(1){
+				font-weight:bold ;
+				font-size: 0.18rem;
+				line-height: 0.4rem;
+			}
+			.ppp>p>span:nth-child(2){
+				color: rgb(45 215 165);
+				font-size: 0.1rem;
+				line-height: 0.4rem;
+				padding: 0 0.12rem 0 0.12rem;
+			}
+			.ppp>p>span:nth-child(3){
+				color:silver;
+				font-size: 0.16rem;
+				line-height: 0.4rem;
+			}
+			.lian{
+				padding-bottom: 0.15rem;
+				padding-top: 0.15rem;
+				background: #EEEEEE;
+			}
+			.lian>ul{
+				width: 100%;
+				background: white;
+			}
+			.lian>ul>li{
+				padding: 0.1rem 0.17rem 0 0.15rem;
+				line-height: 0.4rem;
+				border-bottom:0.01rem solid #EEEEEE ;
+				display: flex;
+				justify-content: space-between;
+			}
+			.lian>ul>li>p:nth-child(2)>img{
+				height: 0.26rem;
+			}
+			.foot{
+					padding-bottom: 0.3rem;
+				/*padding-top: 0.08rem;*/
+				background: #EEEEEE;
+			}
+			.foot>p{
+				width: 100%;
+				padding-left: 0.13rem;
+				background: white;
+				line-height: 0.3rem;
+				border-bottom:0.01rem solid #EEEEEE ;
+			}
+				.foot>p>span:nth-child(1){
+					padding: 0 0.12rem 0 0.12rem;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul class="ula">
+				<li>
+					<p><img src="img/左-(2).png"/></p>
+					<p>店铺信息</p>
+				</li>
+			</ul>
+			<ul class="ul1">
+					<li>
+						<img src="img/500712982.png"/>
+						<div class="le">
+							<p>千图网生鲜水果店</p>
+							<p>
+								<span><img src="img/店铺信息.jpg"/></span>
+								9.82分
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="ulq">
+					<li>+关注</li>
+				</ul>
+			<ul class="ulr">
+				<li>
+					<p>34</p>
+					<p>全部商品</p>
+				</li>
+				<li>
+					<p>0</p>
+					<p>上新</p>
+				</li>
+				<li>
+					<p>10</p>
+					<p>促销</p>
+				</li>
+				<li>
+					<p>2</p>
+					<p>店铺动态</p>
+				</li>
+			</ul>
+			<div class="ppp">
+				<p><span>商品评价</span><span>9.6分</span><span>高于同行48.1%</span></p>
+				<p><span>服务态度</span><span>9.4分</span><span>高于同行47.3%</span></p>
+				<p><span>物流速度</span><span>9.6分</span><span>高于同行47.3%</span></p>
+			</div>
+			<div class="lian">
+				<ul>
+					<li>
+						<p>联系卖家</p>
+						<p><img src="img/联系电话.png"/></p>
+					</li>
+					<li>
+						<p>店铺二维码</p>
+						<p><img src="img/saomasoudan.png"/></p>
+					</li>
+					<li>
+						<p>证件照信息</p>
+						<p><img src="img/wodezhangdan.png"/></p>
+					</li>
+				</ul>
+			</div>
+			<div class="foot">
+				<p>店铺简介&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>千图网生鲜水果店，直销水果，蔬菜，生鲜</span></p>
+				<p>所在地区<span>浙江省杭州市</span></p>
+				<p>开店时间<span>2019-11-20</span></p>
+			</div>
+		</div>
+	</body>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Zepto(function(){
+			$('.ulq>li').tap(function(){
+				$(this).css('background','red')
+			})
+			
+		})
+	</script>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			#box>p{
+				padding: 0.01rem 0.01rem 0.02rem 0.01rem;
+				display: flex;
+				justify-content: center;
+				z-index: 99;
+				position: fixed;
+				top: 0;
+			}
+			#box>p>img{
+				width: 100%;
+			}
+			.ula{
+				width: 100%;
+				height: 0.45rem;
+				display: flex;
+				position: fixed;
+				margin-top: 0.12rem;
+				align-items: center;
+				/*padding: 0 0 0 0.18rem;*/
+				justify-content: space-around;
+			}
+			.ula>li{
+				width: 100%;
+				height: 0.25rem;
+				display: flex;
+				justify-content: space-around;
+			}
+			p{
+				display: flex;
+			}
+			.ula>li>p:nth-child(1)>img{
+				width: 0.4rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(3)>img{
+				width: 0.38rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>input{
+				width: 2.5rem;
+				height: 0.30rem;
+				font-size: 0.12rem;
+				padding: 0 0 0 0.24rem;
+				position: relative;
+				border-radius:0.3rem ;
+				background: #f5f5f5;
+				border: 0;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>span>img{
+				width: 0.18rem;
+				height: 0.17rem;
+				font-size: 0.12rem;
+				position: absolute;
+				top: 0.2rem;
+				left: 0.55rem;
+				z-index: 1;
+			}
+			.dao{
+				width: 100%;
+				
+				font-size: 0.15rem;
+			}
+			.dao>.ulb{
+				width: 100%;
+				display: flex;
+				justify-content:space-around;
+			}
+			.dao>.ulb>li{
+				margin-top: 0.6rem;
+				width: 20%;
+				padding: 0.09rem 0.12rem 0.09rem 0.12rem;
+				display: flex;
+				justify-content: space-around;
+				background: black;
+				color: white;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.dao>.ulb>li:hover{
+				background: #2FD7A6;
+			}
+			.dao>.ulb>li:nth-child(1){
+				background: #2fd7a6;
+			}
+			.dao>.ulb>li>p:nth-child(1){
+				display: flex;
+				justify-content: center;
+			}
+			.dao>.ulb>li>p:nth-child(1)>img{
+				width: 50%;
+			
+			}
+			.dao>.ulb>li>p:nth-child(2){
+				width: 0.34rem;
+			}
+
+			.zz>p{
+				padding: 0.13rem 0.07rem 0.1rem 0.13rem;
+				display: flex;
+				font-size: 0.2rem;
+				color: #2dd7a8;
+			}
+			.zz>p>span{
+				color: #999999;
+				margin-top: 0.08rem;
+				font-size: 0.15rem;
+			}
+			.zz>p>img{
+				width: 0.25rem;
+				height: 0.25rem;
+			}
+			.z1{
+				display: flex;
+			}
+			.z1>.left{
+				width: 1.42rem;
+				/*height: 2.13rem;*/
+				display: flex;
+				background: #fc8d56;
+				font-size: 0.15rem;
+				margin-left: 0.09rem;
+				color: #FFFFFF;
+				position: relative;
+			}
+			.z1>.left>ul{
+				padding: 0.15rem;
+			}
+			.z1>.left>ul>li:nth-child(1){
+				font-size: 0.15rem;
+			}
+			.z1>.left>ul>li:nth-child(4){
+				background: white;
+			}
+			.z1>.left>ul>li:nth-child(4)>img{
+				width: 0.95rem;
+				height: 0.8rem;
+				
+			}
+			.z1>.left>ul>li:nth-child(5){
+				padding: 0.05rem 0.08rem 0 0.08rem;
+				position: absolute;
+				top: 1.6rem;
+				left: 0.28rem;
+				background: red;
+				border-radius:0.15rem ;
+			}
+			.z1>.rig>ul{
+				width: 2.13rem;
+				height: 0.87rem;
+				font-size: 0.15rem;
+				padding-left: 0.09rem;
+				border: 0.01rem solid #eeeeee;
+				display: flex;
+				justify-content: space-between;
+			}
+			.z1>.rig>ul>li:nth-child(1)>p:nth-child(1){
+				font-size: 0.2rem;
+				color: #9f7c38;
+			}
+			.z1>.rig>ul>li:nth-child(1)>p:nth-child(2){
+				font-size: 0.15rem;
+				color: #666666;
+			}
+			.z1>.rig>ul>li:nth-child(1)>p:nth-child(3){
+				font-size: 0.19rem;
+				color: #fb8e56;
+				padding-left: 0.09rem;
+				border: 0.01rem solid #fb8e56;
+				border-radius:0.2rem ;
+			}
+			.z1>.rig>ul>li:nth-child(2)>img{
+				width: 0.95rem;
+				height: 0.75rem;
+			}
+			/*.z1>.rig>.x2{
+				display: flex;
+			}*/
+			.z1>.rig>.x2>ul{
+				font-size: 0.1rem;
+				display: flex;
+			}
+			.z1>.rig>.x2>ul>li{
+				padding:0.1rem 0.15rem 0 0.15rem;	
+				border: 0.01rem solid #eeeeee;
+			}
+				.z1>.rig>.x2>ul>li:nth-child(1)>p:nth-child(1){
+					color: #d3396b;
+					font-size:0.2rem ;
+				}
+				.z1>.rig>.x2>ul>li:nth-child(1)>p:nth-child(2){
+					color: #676767;
+					font-size:0.1rem ;
+				}
+				.z1>.rig>.x2>ul>li:nth-child(2)>p:nth-child(1){
+					color: #fb8c57;
+					font-size:0.2rem ;
+				}
+				.z1>.rig>.x2>ul>li:nth-child(2)>p:nth-child(2){
+					color: #676767;
+					font-size:0.1rem ;
+				}
+			.z1>.rig>.x2>ul>li>p:nth-child(3)>img{
+				width: 0.62rem;
+				height:0.62rem ;
+			}
+			.foot1>ul{
+				display: flex;
+				/*justify-content: space-around;*/
+				font-size: 0.1rem;
+			}
+			.foot1>ul>li{
+				line-height: 0.25rem;
+				border-right: 0.01rem solid #EEEEEE;
+				border-bottom: 0.01rem solid #EEEEEE;
+				border-top: 0.01rem solid #EEEEEE;
+			}
+			.foot1>ul>li>p:nth-child(1){
+				color: #000000;
+			}
+			.foot1>ul>li>p:nth-child(2){
+				color: #999999;
+			}
+			.foot1>ul>li>p{
+				padding-left:0.1rem ;
+			}
+			.foot1>ul>li>p:nth-child(3)>img{
+				width: 1.14rem;
+				margin: 0 auto;
+			}
+			.foot1>ul>li>p:nth-child(4){
+				/*padding-left: 0.2rem;*/
+				color: #2FD7A6;
+			}
+			.foot2>ul{
+				width: 80%;
+				margin-left:0.4rem;
+				font-size: 0.15rem;
+				position: fixed;
+				bottom: 0;
+				background: white;
+				display: flex;
+				justify-content: space-between;
+				border-radius:0.3rem ;
+				border:0.01rem solid #EEEEEE;
+			}
+			.foot2>ul>li{
+				width: 25%;
+				text-align: center;
+				margin: 0 auto;
+				padding-left:0.21rem ;
+				/*border: 0.01rem solid black;*/
+			}
+			.foot2>ul>li:hover{
+				background: #2DD7A8;
+			}
+			.foot2>ul>li>a>p:nth-child(1){
+					width: 25%;
+			}
+			.foot2>ul>li>a>p:nth-child(1)>img{
+				height: 0.3rem;
+			}
+				.foot2>ul>li:nth-child(1){
+					border-radius: 0.25rem 0 0 0.25rem;
+				}
+				.foot2>ul>li:nth-child(4){
+					border-radius:0 0.25rem 0.25rem 0;
+				}
+		 html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+	.swiper-slide>img{
+		width: 100%;
+	}
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+		
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .lunz{
+    	z-index: 99;
+    	position: absolute;
+    	top: 1.44rem;
+    	left: 0.32rem;
+    	line-height: 0.25rem;
+    }
+     .lunz>p:nth-child(1){
+     	font-size: 0.18rem;
+     }
+     .lunz>p:nth-child(2){
+     	font-size: 0.21rem;
+     }
+     .lunz>p:nth-child(3){
+     	font-size: 0.16rem;
+     }
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p><img src="img/状态栏.png"/></p>
+			<ul class="ula">
+				<li>
+					<p><img src="img/logo-.png"/></p>
+					<p><span><img src="img/sousuo的副本.png"/></span><input type="text" name="" id="" value=""placeholder="搜索商品" /></p>
+					<p><img src="img/首页11.jpg"/></p>
+				</li>
+			</ul>
+			<div class="dao">
+				<ul class="ulb">
+					<li>
+						<p><img src="img/店铺精选.png"/></p>
+						<p>精选</p>
+					</li>
+					<li>
+						<p><img src="img/新鲜水果.png"/></p>
+						<p>水果</p>
+					</li>
+					<li>
+						<p><img src="img/生鲜-蔬菜.png"/></p>
+						<p>蔬菜</p>
+					</li>
+					<li>
+						<p><img src="img/海鲜.png"/></p>
+						<p>海鲜</p>
+					</li>
+					<li>
+						<p><img src="img/店铺精选.png"/></p>
+						<p>商家</p>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+			<div class="lunz">
+				<p>#有机蔬菜#</p>
+				<p>喜欢的就是这么简单</p>
+				<p>吃的是 清脆的感觉</p>
+			</div>
+			<div class="zz">
+				<p><img src="img/热卖.png"/>今日推荐<span>精品商品抢购中</span></p>
+			</div>
+			<div class="z1">
+				<div class="left">
+					<ul>
+						<li>超值专区抢购</li>
+						<li>——</li>
+						<li>
+							<p>最低10元起</p>
+							<p>领券满99减20</p>
+						</li>
+						
+						<li><img src="img/草莓-拷贝.png"/></li>
+						<li>19.8元起</li>
+					</ul>
+				</div>
+				<div class="rig">
+					<ul>
+						<li>
+							<p>农产品直售</p>
+							<p>官方采购</p>
+							<p>满99减20</p>
+						</li>
+						<li><img src="img/泥猴桃.png"/></li>
+					</ul>
+						<div class="x2">
+							<ul>
+								<li>
+									<p>生鲜旺季</p>
+									<p>满满的幸福</p>
+									<p><img src="img/火龙果.png"/></p>
+								</li>
+								<li>
+									<p>超值优惠</p>
+									<p>先领券再购物</p>
+									<p><img src="img/橙子-拷贝.png"/></p>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="zz">
+				<p><img src="img/lingshouliang.png"/>新品上线<span>精品商品抢购中</span></p>
+			</div>
+			<div class="foot1">
+				<ul>
+					<li>
+						<p>传奇香橙</p>
+						<p>清新型水果</p>
+						<p><img src="img/橙子-拷贝.png"/></p>
+						<p>￥29.00起</p>
+					</li>
+					<li>
+						<p>草莓多多</p>
+						<p>诱人型水果</p>
+						<p><img src="img/橙子-拷贝.png"/></p>
+						<p>￥29.00起</p>
+					</li>
+					<li>
+						<p>甜柠檬</p>
+						<p>甜的不可思议</p>
+					<p><img src="img/橙子-拷贝.png"/></p>
+						<p>￥29.00起</p>
+					</li>
+				</ul>
+			</div>
+			<div class="foot2">
+				<ul>
+					<li>
+						<a href="#">
+							<p><img src="img/购物袋1.png"/></p>
+							<p>首页</p>
+						</a>
+						
+					</li>
+					<li>
+						<a href="展示页.html">
+							<p><img src="img/其他.png"/></p>
+							<p>分类</p>
+						</a>
+					</li>			
+						
+				<li>
+					<a href="购物车.html">
+						<p><img src="img/gouwucheman.png"/></p>
+						<p>购物车</p>
+					</a>
+						
+				</li>
+						
+				<li>
+					<a href="我的.html">
+						<p><img src="img/登录用户名 (1).png"/></p>
+						<p>我的</p>
+					</a>
+					
+				</li>
+						
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		  var swiper = new Swiper('.swiper-container', {
+	      	pagination: {
+	        	el: '.swiper-pagination',
+     		 },
+     		 loop:true,
+     		autoplay: {
+    			delay: 1000,//1秒切换一次
+  			},
+    	});
+	</script>
+</html>

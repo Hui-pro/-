@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			#box>p{
+				width: 100%;
+				padding: 0.01rem 0.01rem 0.02rem 0.01rem;
+				display: flex;
+				justify-content: center;
+				
+			}
+			.pb>img{
+				width: 100%;
+				
+				position: fixed;
+			}
+			.ula{
+				width: 100%;
+				height: 0.45rem;
+				display: flex;
+				margin-top:0.17rem ;
+				justify-content: space-around;
+				background: white;
+			}
+			.ula>li{
+				width: 100%;
+				height: 0.25rem;
+				position: fixed;
+				display: flex;
+				justify-content: space-around;
+			}
+			p{
+				display: flex;
+			}
+			.ula>li>p:nth-child(1)>img{
+				width: 0.4rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(3)>img{
+				width: 0.38rem;
+				height: 0.35rem;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>input{
+				width: 2.5rem;
+				height: 0.35rem;
+				font-size: 0.12rem;
+				padding: 0 0 0 0.35rem;
+				position: relative;
+				border-radius:0.3rem ;
+				background: #f5f5f5;
+				border: 0;
+				/*border: 1px solid black;*/
+			}
+			.ula>li>p:nth-child(2)>span>img{
+				width: 0.18rem;
+				height: 0.17rem;
+				font-size: 0.12rem;
+				position: absolute;
+				top: 0.1rem;
+				left: 0.55rem;
+				z-index: 1;
+			}
+			.box1{
+				display: flex;
+				font-size: 0.1rem;
+			}
+			.box1>.left{
+				width: 26%;
+				background: rgb(242 242 242);
+			}
+			.box1>.rig{
+				width: 74%;
+			}
+			.box1>.left>ul>li{
+				/*height: 0.12rem;*/
+				text-align: center;
+				line-height: 0.7rem;
+				font-size: 0.2rem;
+			}
+			.box1>.left>ul>li:hover{
+				background: white;
+				
+				border-left:0.03rem solid #2FD7A6; 
+				color: #2FD7A6;
+			}
+			.box1>.rig{
+				width: 74%;
+				
+				position: relative;
+			}
+			.rig>.ul111>li:nth-child(1)>img{
+				width: 2.5rem;
+				height: 1.05rem;
+				padding-left: 0.14rem;
+			}
+			.rig>.ul111>li:nth-child(2){
+				position: absolute;
+				top:0.1rem;
+				left: 0.25rem;
+			}
+			.rig>.ul111>li:nth-child(2)>p:nth-child(1){
+				font-size: 0.17rem;
+			}
+			.rig>.ul111>li:nth-child(2)>p:nth-child(2){
+				font-size: 0.18rem;
+			}
+			.rig>.ul111>li:nth-child(2)>p:nth-child(3){
+				width: 0.72rem;
+				text-align: center;
+				padding-left: 0.09rem;
+				font-size: 0.14rem;
+				border-radius:0.21rem ;
+				margin-top: 0.09rem;
+				border: 0.01rem solid burlywood;
+			}
+			.rig>.ling{
+				padding: 0.1rem 0 0.11rem 0.14rem;
+				font-size: 0.18rem;
+				font-weight:bold ;
+			}
+			.rig>.ulb{
+				width: 90%;
+				border: 0.01rem solid #EEEEEE;
+				border-radius:0.13rem ;
+				display: flex;
+				flex-wrap:wrap ;
+				justify-content: space-around;
+				margin:  0 auto;
+			}
+				.rig>.ulb>li{
+					width: 0.7rem;
+					height: 1.05rem;
+					line-height: 0.5rem;
+					
+				}
+				.rig>.ulb>li>p:nth-child(2){
+					padding-left: 0.16rem;
+					font-size: 0.16rem;
+				}
+			.rig>.ulb>li>p:nth-child(1)>img{
+				width: 0.6rem;
+				height: 0.5rem;
+				margin: 0 auto;
+			}
+			.foot2>ul{
+				width: 80%;
+				margin-left:0.4rem;
+				font-size: 0.15rem;
+				position: fixed;
+				bottom: 0;
+				background: white;
+				display: flex;
+				justify-content: space-between;
+				border-radius:0.3rem ;
+				border:0.01rem solid #EEEEEE;
+			}
+			.foot2>ul>li{
+				width: 25%;
+				text-align: center;
+				margin: 0 auto;
+				padding-left:0.21rem ;
+				/*border: 0.01rem solid black;*/
+			}
+			.foot2>ul>li:hover{
+				background: #2DD7A8;
+			}
+			.foot2>ul>li>a>p:nth-child(1){
+					width: 25%;
+			}
+			.foot2>ul>li>a>p:nth-child(1)>img{
+				height: 0.3rem;
+			}
+				.foot2>ul>li:nth-child(1){
+					border-radius: 0.25rem 0 0 0.25rem;
+				}
+				.foot2>ul>li:nth-child(4){
+					border-radius:0 0.25rem 0.25rem 0;
+				}
+		</style>
+	</head>
+	<body>
+		<p class="pb"><img src="img/状态栏.png"/></p>
+		<div class="box">
+			
+			<ul class="ula">
+				<li>
+					<p><img src="img/左-(2).png"/></p>
+					<p><span><img src="img/sousuo的副本.png"/></span><input type="text" name="" id="" value=""placeholder="搜索商品" /></p>
+					<p><img src="img/消息.png"/></p>
+				</li>
+			</ul>
+			<div class="box1">
+				<div class="left">
+					<ul>
+						<li>热门推荐</li>
+						<li>所有生鲜</li>
+						<li>时令水果</li>
+						<li>促销水果</li>
+						<li>西瓜蜜桃</li>
+						<li>热带水果</li>
+						<li>休闲干果</li>
+						<li>现切水果</li>
+						<li>健康食材</li>
+						<li>新鲜蔬菜</li>
+						<li>水产生鲜</li>
+					</ul>
+				</div>
+				<div class="rig">
+					<ul class="ul111">
+						<li><img src="img/banner.png"/></li>
+						<li>
+							<p>脐橙10.8元/斤</p>
+							<p>好评率99%的甜橙</p>
+							<p>立即购买</p>
+						</li>
+					</ul>
+					<p	class="ling">时令水果</p>
+					<ul class="ulb">
+						<li>
+							<p><img src="img/草莓.png"/></p>
+							<p>草莓</p>
+						</li>
+						<li>
+							<p><img src="img/火龙果.png"/></p>
+							<p>火龙果</p>
+						</li>
+						<li>
+							<p><img src="img/橙子-拷贝.png"/></p>
+							<p>橙子</p>
+						</li>
+						<li>
+							<p><img src="img/葡萄.png"/></p>
+							<p>葡萄</p>
+						</li>
+						<li>
+							<p><img src="img/泥猴桃.png"/></p>
+							<p>奇异果</p>
+						</li>
+						<li>
+							<p><img src="img/柠檬.png"/></p>
+							<p>柠檬</p>
+						</li>
+					</ul>
+					<p	class="ling">促销水果</p>
+					<ul class="ulb">
+						<li>
+							<p><img src="img/草莓.png"/></p>
+							<p>草莓</p>
+						</li>
+						<li>
+							<p><img src="img/火龙果.png"/></p>
+							<p>火龙果</p>
+						</li>
+						<li>
+							<p><img src="img/橙子-拷贝.png"/></p>
+							<p>橙子</p>
+						</li>
+						<li>
+							<p><img src="img/葡萄.png"/></p>
+							<p>葡萄</p>
+						</li>
+						<li>
+							<p><img src="img/泥猴桃.png"/></p>
+							<p>奇异果</p>
+						</li>
+						<li>
+							<p><img src="img/柠檬.png"/></p>
+							<p>柠檬</p>
+						</li>
+					</ul>
+					<p	class="ling">热带水果</p>
+					<ul class="ulb">
+						<li>
+							<p><img src="img/草莓.png"/></p>
+							<p>草莓</p>
+						</li>
+						<li>
+							<p><img src="img/火龙果.png"/></p>
+							<p>火龙果</p>
+						</li>
+						<li>
+							<p><img src="img/橙子-拷贝.png"/></p>
+							<p>橙子</p>
+						</li>
+						<li>
+							<p><img src="img/葡萄.png"/></p>
+							<p>葡萄</p>
+						</li>
+						<li>
+							<p><img src="img/泥猴桃.png"/></p>
+							<p>奇异果</p>
+						</li>
+						<li>
+							<p><img src="img/柠檬.png"/></p>
+							<p>柠檬</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="foot2">
+				<ul>
+					<li>
+						<a href="index.html">
+						<p><img src="img/购物袋1.png"/></p>
+						<p>首页</p></a>
+					</li>
+					<li>
+						<a href="#"><p><img src="img/其他.png"/></p>
+						<p>分类</p></a>
+					</li>			
+						
+				<li>
+					<a href="购物车.html"><p><img src="img/gouwucheman.png"/></p>
+						<p>购物车</p></a>
+				</li>
+						
+				<li>
+					<a href="我的.html"><p><img src="img/登录用户名 (1).png"/></p>
+					<p>我的</p></a>
+				</li>
+						
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+	</script>
+</html>
